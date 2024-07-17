@@ -1,0 +1,500 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'TTTogether';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/TTTogetherA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MangoDdobak-B';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MangoByeolbyeol';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoByeolbyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: "Pretendard-Regular";
+    margin: 0px;
+    padding: 0px;
+}
+ul, li {
+    padding: 0px;
+    margin: 0px;
+}
+/* header css !! */
+/* 헤드라인 */
+#head #logo {
+    width: 200px;
+    
+    position: absolute;
+    left: 80px;
+    top : 10px;
+}
+#head {
+/*  display: grid;
+    grid-template-columns: 5fr 5fr 3.5fr; */
+    height: 90px;
+    background-color: white;
+}
+#search {
+    position: absolute;
+    top : 25px;
+    left : 35%;
+}
+.search {
+    background: #f7feff;
+    border-radius: 10px;
+    border-color: #B8E9FF;
+    border-width: 2px;
+    
+    font-weight: bold;
+    padding-left: 25px;
+    
+    height: 45px;
+    min-width: 330px;
+}
+
+#search-btn {
+	position : absolute;
+	top : 25px;
+	left : 53%; 
+}
+
+#search-btn > input {
+	background: #f7feff;
+	border-radius: 10px;
+	width : 65px;
+	border: solid skyblue;
+	color : skyblue;
+	
+	height: 45px;
+}
+
+#search-btn > input:hover {
+	box-shadow: 1px 1px 2px gray;
+}
+
+#login-main {
+    position: absolute;
+    top : 35px;
+    right : 50px;
+}
+#login-btn a {
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+    font-size: max(1vw);
+    
+    display: inline;
+}
+#login-btn a:hover {
+    color: #B8E9FF;
+}
+.login-icon img {
+    width: 20px;
+}
+.login-icon {
+    display: inline-block;
+}
+#main-head {
+    position: sticky;
+    
+    top: 0px;
+    height: auto;
+    background: white !important;
+    z-index: 2;
+}
+/* 헤더 탭 코드 */
+#header-tap {
+	height: 57px;	
+}
+
+#header-tap-list {
+ 	display: flex;
+/*	-webkit-box-align: center; */
+	align-items: center;
+	justify-content: flex-start;
+	column-gap: 80px;
+	height: 56px;
+	padding: 0 100px; 
+}
+
+#header-tap-list li {
+	list-style: none;	
+	position: relative;
+}
+
+/*font-family: 'TTTogether';*/
+
+#header-tap-list li a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+	
+}
+
+#header-tap-list li a:hover {
+	color: skyblue !important;	
+	font-weight: bold;
+}
+
+ #header-tap-list li ul {
+	
+/* 	padding-top: 20px;
+	padding-left: 40px; */
+/*  	width:150px;
+	height: auto; */ 
+	top: 26px;
+	left: -60px;
+	position: absolute;	
+/* 	background: white; */
+/*  border: 1px solid gray; 
+ 	border-radius: 3px; */
+}	 
+
+/* 06.23 추가 */
+.cate-box {
+	width : 190px;
+	background: white;
+	position: absolute;	
+	height: 56px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 0.5px solid #cccccc;	
+	
+	font-size: 20px;
+	/* border-radius: 5px;	 */
+}
+
+.cate-box1 {
+	border-top: 1px solid black;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	
+}
+
+.cate-box8 {
+	width : 190px;
+	background: white;
+	position: absolute;	
+	height: 56px;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;	
+	font-size: 20px;
+	
+	border-bottom-left-radius: 3px; 
+	border-bottom-right-radius: 3px;
+}
+
+/* 06.23 추가 */
+.cate-box a {
+	position: absolute;
+	top: 16px;
+	left: 30px;
+	
+}
+
+.test :hover {
+	background: #fafafa;
+}
+
+.cate-box8 a {
+	position: absolute;
+	top: 16px;
+	left: 30px;
+}
+
+
+
+#tab-img {
+	width: 24px;
+	height: 100%;
+/* 	padding: 100px; */
+
+	text-decoration: none;
+	color: black;
+} 
+
+/* 상단메인배너 end */
+
+/* 서브 상세 페이지 작업내용 기재 */
+
+.img-box{
+		margin: auto;
+		padding: 30px;
+		width: 600px;
+		height: 100px;
+	}
+
+	 .c-btn{
+		margin:auto;
+		width: 760px;
+		text-align: right;
+     }
+
+	.c-btn .btn{
+	  display: inline-block;
+      padding: 5px 10px;
+      background-color: #77bbff;
+      color: white;
+      margin-bottom: 20px;
+      text-decoration: none;
+      border-radius: 10px;
+	}
+	
+
+	.c-btn .btn:hover {
+      background-color: #d2d2d2;
+      color: white;
+    }
+
+	
+	.commu-box {
+	    width: 800px;
+	    margin: 0 auto;
+	    padding: 20px;
+	}
+	
+	h2 {
+	    text-align: center;
+	}
+	
+	.t-commu {
+	    width: 100%;
+	    border-collapse: collapse;
+	    margin-bottom: 20px;
+	}
+	
+	.t-commu th,
+	.t-commu td {
+	    border: 1px solid #ddd;
+	    padding: 8px;
+	   
+	}
+	
+	.t-commu th {
+	    background-color: #f2f2f2;
+	    text-align: center;
+	    vertical-align: middle;
+	}
+	
+	
+	.comments {
+	    border-top: 1px solid #ddd;
+	    padding : 10px;
+	    font-size: 0px;
+	}
+	
+	.comment-input {
+	    border-top: 1px solid #ddd;
+	    padding: 10px;
+	}
+	
+	.comment-input textarea {
+	    width: 85%;
+	    height: 100px;
+	    padding: 10px;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    resize: none;
+	}
+
+	.comments .c-btn{
+		padding: 10px;
+		width: 750px;
+		text-align: right;
+	    font-size: 13px;
+     }
+	.update-box{
+		vertical-align: top !important;
+	}
+
+
+
+	.update-box .update-text{
+		width: 750px;
+		height: 30px;
+		border: 1px solid #dfdfdf;
+		border-radius: 5px;
+		vertical-align: top;
+	}
+
+	.comment-btn .btn.btn-insert{
+		margin-top: 8px;
+	}
+
+	.comments .c-btn .btn{
+		display: inline-block;
+		margin: 0px;
+	    padding: 5px 15px;
+	    background-color: #3198ff;
+	    color: white;
+	    text-decoration: none;
+	    cursor: pointer;
+		}
+	
+	form{
+		display: inline-block;	
+	}
+
+	.comments .c-btn .btn:hover {
+     	 background-color: #78e1fc;
+     	 color: white;
+    	}
+
+	.c-btn .btn.btn-del{
+		background-color: #ff3737!important;
+	}
+	
+	.c-btn .btn.btn-del:hover {
+      background-color: #ff8080 !important;
+      color: white;
+    }
+
+	.content-cell{
+		height: 200px;
+		vertical-align: top;
+		}
+
+	.comment-list{
+		margin: auto;
+		border-top: 5px solid #000000;
+		height: 50px;
+		text-align: center;
+		margin-top: 100px;
+	}
+	
+	.c-div{
+		margin-top: 12px;
+		font-weight: bold;
+	}
+
+	.comment-reply{
+		font-size: 14px;
+	}
+
+	.comment-deco{
+		font-size: 14px;
+	}
+
+	.comment-date{
+		font-size: 14px;
+		color: #ababab;
+	}
+	
+	.comment-content{
+		font-size: 18px;
+	}
+	
+	.comments .comment-content{
+		padding: 7px;
+	}
+	.comment-input textarea {
+	    width: 760px;
+	    height: 100px;
+	    padding: 10px;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    resize: none;
+	    font-size: 18px;
+	}
+	
+	.comment-btn{
+	   text-align: right;
+	}
+	
+	.comment-btn button {
+	    padding: 10px 20px;
+	    background-color: #007bff;
+	    color: white;
+	    border: none;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+	
+	.comment-btn button:hover {
+	    background-color: #0056b3;
+	}
+	
+
+
+	.commu-img{
+		text-align: center;
+	}
+
+	table{
+		border-collapse: collapse; 
+	}
+
+
+	.title-listbox{
+		width: 1000px;
+		margin: auto;
+	}
+	
+	.listbox{
+		width: 100%;
+		border-top: 5px solid #2f2f2f;
+	}
+	
+	.s-btn .btn{
+		display: inline-block;
+	}
+	
+	.s-btn .btn{
+	   display: inline-block;
+      padding: 5px 10px;
+      background-color: #959595;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+	}
+	
+
+	.s-btn .btn:hover {
+        background-color: #d2d2d2;
+      color: white;
+    }
+	
+	
+	#empty-msg{
+		margin:auto;
+		color: #ff6262;
+		text-align: center;
+	}
+
+/* footer 부분 start */
+#footer {
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: #cccccc;
+}
+#footerlogo{
+    width:100px;
+    height:50px;
+}
+.footer1{
+    display: inline-block;
+    width:1300px;
+}
+.footer2{
+    display: inline-block;
+    width:200px;
+    float:right;
+}
+/* 예송, 찬종 작업내역 end */
